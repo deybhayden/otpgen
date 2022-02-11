@@ -1,7 +1,10 @@
-#!/usr/bin/python
-# https://github.com/pyotp/pyotp
-import os
+#!/usr/bin/env python
+import sys
 import pyotp
 
-totp = pyotp.TOTP(os.environ["MFA_SEED"])
-print(totp.now())
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        sys.exit("Exactly 1 argument is expected: mfa_seed_value")
+
+    totp = pyotp.TOTP(sys.argv[1])
+    print(totp.now())
