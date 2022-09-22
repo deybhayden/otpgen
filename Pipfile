@@ -7,3 +7,8 @@ name = "pypi"
 pyotp = "*"
 
 [dev-packages]
+flake8 = "*"
+black = "*"
+
+[pipenv]
+allow_prereleases = true
