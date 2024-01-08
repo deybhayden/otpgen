@@ -13,6 +13,6 @@ pipenv install .
 Follow the steps on the article above in setting up a virtual device for MFA on the AWS root user. Once you have the MFA seed, you can use it below:
 
 ```bash
-export $MFA_SEED="123495Ad3"
+export MFA_SEED="123495Ad3"
 ./get_mfa_code.py $MFA_SEED
 ```
