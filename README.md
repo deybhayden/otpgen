@@ -5,7 +5,7 @@ Generate OTP Codes from MFA seeds. Inspired from [Managing AWS Root Passwords & 
 ## install
 
 ```bash
-pipenv install .
+uv sync
 ```
 
 ## usage

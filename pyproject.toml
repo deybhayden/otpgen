@@ -1,0 +1,14 @@
+[project]
+name = "otpgen"
+version = "0.1.0"
+description = "Generate OTP Codes from MFA seeds"
+requires-python = ">=3.8"
+dependencies = [
+    "pyotp",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "black",
+]
