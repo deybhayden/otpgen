@@ -8,6 +8,9 @@ resolution-markers = [
     "python_full_version < '3.8.1'",
 ]
 
+[options]
+exclude-newer-span = "P7D"
+
 [[package]]
 name = "black"
 version = "24.8.0"
