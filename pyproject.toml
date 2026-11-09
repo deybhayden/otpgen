@@ -2,7 +2,7 @@
 name = "otpgen"
 version = "0.1.0"
 description = "Generate OTP Codes from MFA seeds"
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 dependencies = [
     "pyotp",
 ]
@@ -10,6 +10,5 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "flake8",
-    # Patched Black requires Python 3.10+; keep OTP generation usable on 3.8+.
-    "black>=26.10.1; python_version >= '3.10'",
+    "black>=26.10.1",
 ]

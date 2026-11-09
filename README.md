@@ -4,22 +4,21 @@ Generate OTP Codes from MFA seeds. Inspired from [Managing AWS Root Passwords & 
 
 ## install
 
+Requires Python 3.11+.
+
 ```bash
 uv sync
 ```
 
 ## development
 
-Use Python 3.10+ to install and run all development tools:
+Install and run the development tools:
 
 ```bash
-uv sync --extra dev --python 3.10
+uv sync --extra dev --python 3.11
 uv run --locked --extra dev black --check .
 uv run --locked --extra dev flake8 get_mfa_code.py
 ```
-
-OTP generation still supports Python 3.8+. On Python 3.8 and 3.9, the `dev`
-extra omits Black because patched releases require Python 3.10+.
 
 ## usage
 
